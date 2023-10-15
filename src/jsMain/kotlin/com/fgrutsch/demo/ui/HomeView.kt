@@ -1,4 +1,4 @@
-package com.fgrutsch.kcfw.ui
+package com.fgrutsch.demo.ui
 
 import androidx.compose.runtime.Composable
 import com.fgrutsch.pf.components.PFCard

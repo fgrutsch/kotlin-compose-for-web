@@ -1,4 +1,4 @@
-package com.fgrutsch.kcfw.ui
+package com.fgrutsch.demo.ui
 
 import com.fgrutsch.compose.Route
 import com.fgrutsch.compose.ViewModel

@@ -1,10 +1,10 @@
-package com.fgrutsch.kcfw
+package com.fgrutsch.demo
 
-import com.fgrutsch.kcfw.data.InMemoryOrderRepository
-import com.fgrutsch.kcfw.data.InMemoryUserRepository
-import com.fgrutsch.kcfw.ui.App
-import com.fgrutsch.kcfw.ui.AppCommand
-import com.fgrutsch.kcfw.ui.AppView
+import com.fgrutsch.demo.data.InMemoryOrderRepository
+import com.fgrutsch.demo.data.InMemoryUserRepository
+import com.fgrutsch.demo.ui.App
+import com.fgrutsch.demo.ui.AppCommand
+import com.fgrutsch.demo.ui.AppView
 import kotlinx.browser.window
 import org.jetbrains.compose.web.renderComposableInBody
 

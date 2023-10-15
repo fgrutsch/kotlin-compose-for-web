@@ -1,7 +1,7 @@
-package com.fgrutsch.kcfw.components
+package com.fgrutsch.demo.components
 
 import androidx.compose.runtime.Composable
-import com.fgrutsch.kcfw.data.UserInfo
+import com.fgrutsch.demo.data.UserInfo
 import com.fgrutsch.pf.PFModifier
 import com.fgrutsch.pf.PFUtil
 import com.fgrutsch.pf.components.*

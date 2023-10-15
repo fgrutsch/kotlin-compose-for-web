@@ -1,4 +1,4 @@
-package com.fgrutsch.kcfw.data
+package com.fgrutsch.demo.data
 
 interface UserRepository {
     fun myUser(): UserInfo

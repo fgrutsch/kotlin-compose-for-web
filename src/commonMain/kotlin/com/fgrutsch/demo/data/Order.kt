@@ -1,4 +1,4 @@
-package com.fgrutsch.kcfw.data
+package com.fgrutsch.demo.data
 
 data class Order(
     val id: Long,

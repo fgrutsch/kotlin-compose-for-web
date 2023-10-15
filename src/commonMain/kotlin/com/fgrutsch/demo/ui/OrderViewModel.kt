@@ -1,4 +1,4 @@
-package com.fgrutsch.kcfw.ui
+package com.fgrutsch.demo.ui
 
 import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
@@ -6,8 +6,8 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import com.fgrutsch.compose.Route
 import com.fgrutsch.compose.ViewModel
-import com.fgrutsch.kcfw.data.Order
-import com.fgrutsch.kcfw.data.OrderRepository
+import com.fgrutsch.demo.data.Order
+import com.fgrutsch.demo.data.OrderRepository
 
 class OrderViewModel(
     val id: Long? = null,

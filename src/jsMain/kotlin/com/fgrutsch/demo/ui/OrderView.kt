@@ -1,7 +1,7 @@
-package com.fgrutsch.kcfw.ui
+package com.fgrutsch.demo.ui
 
 import androidx.compose.runtime.Composable
-import com.fgrutsch.kcfw.components.FormField
+import com.fgrutsch.demo.components.FormField
 import com.fgrutsch.pf.PFModifier
 import com.fgrutsch.pf.components.*
 import org.jetbrains.compose.web.attributes.ButtonType

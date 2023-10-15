@@ -1,9 +1,9 @@
-package com.fgrutsch.kcfw.ui
+package com.fgrutsch.demo.ui
 
 import androidx.compose.runtime.Composable
-import com.fgrutsch.kcfw.components.Dropdown
-import com.fgrutsch.kcfw.components.DropdownItem
-import com.fgrutsch.kcfw.components.Pagination
+import com.fgrutsch.demo.components.Dropdown
+import com.fgrutsch.demo.components.DropdownItem
+import com.fgrutsch.demo.components.Pagination
 import com.fgrutsch.pf.PFModifier
 import com.fgrutsch.pf.components.*
 import org.jetbrains.compose.web.dom.A

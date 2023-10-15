@@ -1,4 +1,4 @@
-package com.fgrutsch.kcfw.data
+package com.fgrutsch.demo.data
 
 import kotlin.random.Random
 
@@ -40,7 +40,7 @@ class InMemoryOrderRepository : OrderRepository {
     override fun list(page: Int): Page<Order> {
         val total = orders.size
         val offset = (page - 1) * DEFAULT_PAGE_SIZE
-        val items = orders.drop(offset).take(DEFAULT_PAGE_SIZE)
+        val items = orders.toList().sortedBy { it.date }.reversed().drop(offset).take(DEFAULT_PAGE_SIZE)
         return Page(items, total, page, DEFAULT_PAGE_SIZE)
     }
 
@@ -48,12 +48,14 @@ class InMemoryOrderRepository : OrderRepository {
 
 
 private fun generateRandomOrders(size: Int): List<Order> {
+    val firstNames = listOf("Brian", "Alice", "Bob", "John", "Jane", "Mike", "Susan", "Peter", "Mary", "Paul")
+    val lastNames = listOf("Smith", "Doe", "Miller", "Johnson", "Williams", "Brown", "Jones", "Garcia", "Davis")
     val statuses = listOf("Paid", "Refunded", "Chargedback")
     val payMethods = listOf("Credit Card", "PayPal", "Bank Transfer")
     val products = listOf("T-Shirt", "Hoodie", "Mug", "Poster", "Sticker", "Book")
 
     return (1..size).map { id ->
-        val billingName = "${randomName(6)} ${randomName(6)}"
+        val billingName = "${firstNames.random()} ${lastNames.random()}"
         val date = {
             val month = Random.nextInt(1, 12).toString().padStart(2, '0')
             val day = Random.nextInt(1, 28).toString().padStart(2, '0')

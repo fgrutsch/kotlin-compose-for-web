@@ -1,12 +1,12 @@
-package com.fgrutsch.kcfw.ui
+package com.fgrutsch.demo.ui
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
-import com.fgrutsch.kcfw.components.Masthead
-import com.fgrutsch.kcfw.components.Sidebar
-import com.fgrutsch.kcfw.unhash
+import com.fgrutsch.demo.components.Masthead
+import com.fgrutsch.demo.components.Sidebar
+import com.fgrutsch.demo.unhash
 import com.fgrutsch.pf.PFModifier
 import com.fgrutsch.pf.components.*
 import kotlinx.browser.window

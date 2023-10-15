@@ -1,4 +1,4 @@
-package com.fgrutsch.kcfw.components
+package com.fgrutsch.demo.components
 
 import androidx.compose.runtime.Composable
 import com.fgrutsch.pf.PFModifier
