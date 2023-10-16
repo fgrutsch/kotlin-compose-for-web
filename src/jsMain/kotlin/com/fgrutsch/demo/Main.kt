@@ -8,13 +8,8 @@ import com.fgrutsch.demo.ui.AppView
 import kotlinx.browser.window
 import org.jetbrains.compose.web.renderComposableInBody
 
-/**
- * Example on how to bridge to existing JS interfaces
- */
-external fun require(module: String): dynamic
-
 fun main() {
-    // include the patternfly resource via normal js require
+    // include the patternfly resource via JS require
     require("@patternfly/patternfly/patternfly.css")
     require("@patternfly/patternfly/patternfly-addons.css")
 
@@ -23,8 +18,8 @@ fun main() {
     val app = App(orderRepository, userRepository)
 
     // Initial navigation when opening the page
-    val to = unhash(window.location.hash).ifEmpty { "/" }
-    app.onCommand(AppCommand.Navigate(to))
+    val path = window.location.hashPath()
+    app.onCommand(AppCommand.Navigate(path))
 
     renderComposableInBody {
         AppView(app)

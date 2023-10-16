@@ -6,7 +6,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import com.fgrutsch.demo.components.Masthead
 import com.fgrutsch.demo.components.Sidebar
-import com.fgrutsch.demo.unhash
+import com.fgrutsch.demo.hashPath
 import com.fgrutsch.pf.PFModifier
 import com.fgrutsch.pf.components.*
 import kotlinx.browser.window
@@ -65,7 +65,7 @@ fun AppView(app: App) {
 @Composable
 private fun WindowLocationHandler(app: App) {
     window.onhashchange = {
-        app.onCommand(AppCommand.Navigate(unhash(window.location.hash)))
+        app.onCommand(AppCommand.Navigate(window.location.hashPath()))
     }
     if (window.location.hash != "#${app.currentPath}") window.location.hash = app.currentPath
 }

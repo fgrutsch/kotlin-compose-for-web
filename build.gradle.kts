@@ -15,8 +15,6 @@ val patternFlyVersion: String by project
 kotlin {
     jvmToolchain(17)
 
-
-
     js(IR) {
         browser {
             runTask(Action {

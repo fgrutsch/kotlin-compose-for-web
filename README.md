@@ -24,6 +24,11 @@ To run the application and enable hot reloading use the following command:
 
 A new browser window will open with the application running on `http://localhost:3000`.
 
+## Credits
+
+Some parts of the code are inspired by projects from [Lovely Systems](https://github.com/lovelysystems), go check
+them out!
+
 ## License
 
 This code is licensed under the [Apache 2.0 License](./LICENSE).
