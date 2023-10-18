@@ -6,7 +6,7 @@ This is a sample project that shows how to use
 [Kotlin Compose for Web](https://github.com/JetBrains/compose-multiplatform/#compose-html).
 
 The project was used as a demo for the talk [Intro to Jetpack Compose for Web at 
-VlbgWebDev](https://www.meetup.com/vlbgwebdev/events/293909965/).
+VlbgWebDev](https://www.meetup.com/vlbgwebdev/events/293909965/). You can find the slides [here](slides_kotlin_compose_for_web.pdf).
 
 ## Getting Started
 
